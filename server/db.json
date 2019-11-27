@@ -2,9 +2,9 @@
   "notes": [
     {
       "id": 1,
-      "title": "Read Angular5 blog",
-      "text": "Shall do at 6 pm",
-      "state": "not-started"
+      "title": "assignment",
+      "text": "By Friday",
+      "state": "started"
     },
     {
       "id": 2,
@@ -17,6 +17,42 @@
       "text": "Mark Twain",
       "id": 3,
       "state": "completed"
+    },
+    {
+      "title": "Read Angular 5 blog",
+      "text": "Shall do at 6 pm",
+      "state": "not-started",
+      "id": 4
+    },
+    {
+      "title": "Read Angular 5 blog",
+      "text": "Shall do at 6 pm",
+      "state": "not-started",
+      "id": 5
+    },
+    {
+      "title": "Read Angular 1 blog",
+      "text": "Shall do at 10.30 pm",
+      "state": "not-started",
+      "id": 6
+    },
+    {
+      "title": "Read Angular 1 blog",
+      "text": "Shall do at 10.30 pm",
+      "state": "not-started",
+      "id": 7
+    },
+    {
+      "title": "Read Angular 1 blog",
+      "text": "Shall do at 10.30 pm",
+      "state": "not-started",
+      "id": 8
+    },
+    {
+      "title": "Read Angular 1 blog",
+      "text": "Shall do at 10.30 pm",
+      "state": "not-started",
+      "id": 9
     }
   ]
 }

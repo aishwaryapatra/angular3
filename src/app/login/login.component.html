@@ -1,0 +1,28 @@
+
+<form [formGroup] = profileLogin (ngSubmit) = "loginSubmit()">
+    <div>
+        <label for="username">UserName</label><br/>
+        <input type="text" class="username" placeholder="Enter user name" [formControl]="username">
+        <small *ngIf="username.invalid && (username.dirty || username.touched)">
+            User name is required.
+        </small>
+    </div><br/>
+    <div>
+        <label for="password">Password</label><br/>
+        <input type="text" class="password" placeholder="Enter password" [formControl]="password">
+        <small *ngIf="password.invalid && (password.dirty || password.touched)">
+        <small *ngIf="password.errors.required">
+            Password cannot be left blank
+        </small>
+        <small *ngIf="password.errors.minlength">
+            Password must have minimum length
+        </small>
+        </small>
+    </div><br/>
+    <div>
+         <button type="submit" mat>Submit</button> 
+
+         <!-- <input type="submit" [disabled]="!profileLogin.valid" value="submit">  -->
+             <strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
+    </div>
+</form>

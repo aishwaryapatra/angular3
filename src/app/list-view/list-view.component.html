@@ -2,14 +2,17 @@
 	<label>Not-Started</label>
 	
 	<!-- Populate notStartedNotes -->
+	<app-note [note]="mynote" *ngFor= "let mynote of notStartedNotes"></app-note>
 </div>
 <div class="keep-c-list-container">
 	<label>Started</label>
+	<app-note [note]="mynote" *ngFor= "let mynote of startedNotes"></app-note>
 	
 	<!-- Populate startedNotes -->
 </div>
 <div class="keep-c-list-container">
 	<label>Completed</label>
+	<app-note [note]="mynote" *ngFor= "let mynote of completedNotes"></app-note>
 
 	<!-- Populate completedNotes -->
 </div>
