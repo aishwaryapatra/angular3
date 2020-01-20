@@ -8,6 +8,7 @@ import { Note } from '../note';
   styleUrls: ['./note-view.component.css']
 })
 export class NoteViewComponent implements OnInit {
+  errMessage:string;
   notes: Array<Note> = [];
 
   constructor(private noteservice: NotesService) { }
@@ -17,6 +18,7 @@ export class NoteViewComponent implements OnInit {
       this.notes = data;
     },
       error => {
+        this.errMessage=error.message;
         console.log(error);
       }
     );
